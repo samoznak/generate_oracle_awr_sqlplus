@@ -32,7 +32,7 @@ GRANT ADVISOR TO &&role;
 
 #### Usage
 
-Usage: sh $0 -s "2017-01-02 10:00" -p 2 -U dbusername -P dbpassword -C DB "connection string" [-a] [-b]
+Usage: sh $0 -s "2017-01-02 10:00" -p 2 -U dbusername -P dbpassword -C "DB connection string" [-a] [-b]
 
 -s date/time of beginning snapshot - format YYYY-MM-DD H24:MM
 
@@ -49,6 +49,7 @@ Usage: sh $0 -s "2017-01-02 10:00" -p 2 -U dbusername -P dbpassword -C DB "conne
 -b generate single AWR report from begin snap to end snap.
 
 Example: sh $0 -s "2017-01-02 10:00" -p 2 -U dbaccount -P dbpassword -C "dbserver.domain.com:1521/SERVICE_NAME" -a -b
+
 This example generates three AWR reports: 
 2017-01-02 10:00 to 2017-01-02 10:30
 2017-01-02 10:30 to 2017-01-02 11:00
